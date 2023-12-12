@@ -31,7 +31,7 @@ while(True):
         
     except:
         print('Salvando os dados')
-        pd.DataFrame(dados_dict,index=None).to_csv(nome)
+        pd.DataFrame(dados_dict,index=None).to_csv('../medidas/'+nome)
         break
 
 
