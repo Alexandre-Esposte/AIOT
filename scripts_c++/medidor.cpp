@@ -1,3 +1,5 @@
+// Código para obter as medidas do acelerômetro e envia-las via usb
+
 #include <Adafruit_MPU6050.h>
 #include <Wire.h>
 
@@ -83,7 +85,7 @@ void setup(void) {
 }
 
 void loop() {
-  /* Get new sensor events with the readings */
+  
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
   float vars[6];

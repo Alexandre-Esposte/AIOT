@@ -1,3 +1,5 @@
+# Código para ler a porta usb, receber as medidas, trata-las e salva-las
+
 import serial
 from datetime import datetime
 import struct
@@ -36,5 +38,5 @@ while(True):
 
 
 
-      
+ser.close()
 print('Finalizando programa')
